@@ -8,67 +8,71 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Design_example</title>
     <style>
-
+        .card:hover{
+            border: 1px solid blue; 
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-5">
+            <div class="col-md-5 col-sm-10 col-xs-12 m-auto">
 
-            
-                    <div class="card-body w-25 mt-4 d-inline-block">
-                        <img src="https://image.flaticon.com/icons/svg/45/45802.svg" alt="general settings" width="100%" height="100%"/>
-                        <h6 class="card-text">General Settings</h6>
+                <div class="d-flex">
+                    <div class="card mt-4 mx-auto">
+                        <img src="https://image.flaticon.com/icons/svg/45/45802.svg" alt="general settings" width="150" height="150"/>
+                        <h6 class="card-title">General Settings</h6>
                     </div>
-                
-
-                
-                    <div class="card-body w-25 mt-4 d-inline-block">
-                        <img src="https://www.flaticon.com/premium-icon/icons/svg/2066/2066331.svg" alt="promotion banners" width="100%" height="100%" />
+                    
+                    
+                    <div class="card mt-4 mx-auto">
+                        <img src="https://www.flaticon.com/premium-icon/icons/svg/2066/2066331.svg" alt="promotion banners" width="150" height="150" />
                         <h6 class="card-title">Promotion Banners</h6>
                     </div>
+                </div>
                 
+                    
 
-                
-                    <div class="card-body w-25 mt-4 d-inline-block">
-                        <img src="https://www.flaticon.com/premium-icon/icons/svg/1947/1947416.svg" alt="alert notificationw" width="100%" height="100%" />
+                <div class="d-flex">
+                    <div class="card mt-4 mx-auto">
+                        <img src="https://www.flaticon.com/premium-icon/icons/svg/1947/1947416.svg" alt="alert notificationw" width="150" height="150" />
                         <h6 class="card-title">Alert Notifications</h6>
                     </div>
                 
 
                 
-                    <div class="card-body w-25 mt-4 d-inline-block">
-                        <img src="https://www.flaticon.com/premium-icon/icons/svg/1946/1946821.svg" alt="support setting" width="100%" height="100%" />
+                    <div class="card mt-4 mx-auto">
+                        <img src="https://www.flaticon.com/premium-icon/icons/svg/1946/1946821.svg" alt="support setting" width="150" height="150" />
                         <h6 class="card-title">Support Settings</h6>
                     </div>
-                
+                </div>
 
-                
-                    <div class="card-body w-25 mt-4 d-inline-block">
-                        <img src="https://image.flaticon.com/icons/svg/483/483743.svg" alt="payment settings" width="100%" height="100%" />
+                <div class="d-flex">
+                    <div class="card mt-4 mx-auto">
+                        <img src="https://image.flaticon.com/icons/svg/483/483743.svg" alt="payment settings" width="150" height="150" />
                         <h6 class="card-title">Payment Settings</h6>
                     </div>
-                
 
                 
-                    <div class="card-body w-25 mt-4 d-inline-block">
-                        <img src="https://image.flaticon.com/icons/svg/503/503066.svg" alt="map settings" width="100%" height="100%" />
+                    <div class="card mt-4 mx-auto">
+                        <img src="https://image.flaticon.com/icons/svg/503/503066.svg" alt="map settings" width="150" height="150" />
                         <h6 class="card-title">Map Settings</h6>
                     </div>
+                </div>
                 
 
                 
-                    <div class="card-body w-25 mt-4 d-inline-block">
-                        <img src="https://image.flaticon.com/icons/svg/482/482059.svg" alt="music settings" width="100%" height="100%" />
+                    <div class="card mt-4 d-inline-block ml-4">
+                        <img src="https://image.flaticon.com/icons/svg/482/482059.svg" alt="music settings" width="150" height="150" />
                         <h6 class="card-title">Music Settings</h6>
                     </div>
+
                 
             </div>
 
         
-            <div class="col-7">
+            <div class="col-md-7 col-sm-10 col-xs-12">
 
                 <div class="w-100 d-flex flex-row justify-content-between mt-4">
                     <h4>Chat Confiuration</h4>
@@ -96,7 +100,7 @@
                     </div>
                 </div>
                 <p>Enable to send self-defined reply message to Customers when they chat with you</p>
-                <textarea class="txtStyle" maxlength="500" rows="3" cols="60" placeholder="Text Your Message Here ...."></textarea>
+                <textarea class="txtStyle col-sm-12 col-xs-12" maxlength="500" rows="3" cols="50" placeholder="Text Your Message Here ...."></textarea>
                 <p> You can put greetings, policies, promotions and any other information you wish to let your customers know in the message, limited to <span id="txtRemaining"> 500</span> characters </p>
                 <button class="btn btn-primary">Save</button>
 
@@ -110,7 +114,7 @@
                 <p>Sets the Times and Days When you appear online to chat</p>
 
                 <div class="rows">
-                    <div class="col-10">
+                    <div class="col-md-10 col-sm-12 col-xs-12">
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="allDays">
                             <label class="form-check-label" for="allDays">Enable Chat for all days (24*7)</label>
@@ -119,57 +123,57 @@
                         <p class="d-flex justify-content-center">(or)</p>
 
                         <div class="form-group form-check d-flex flex-row justify-content-between">
-                            <div class="col-3">
+                            <div class="col-md-3 col-sm-10 col-xs-12">
                                 <input type="checkbox" class="form-check-input" id="monday">
                                 <label class="form-check-label" for="monday">Monday</label>
                             </div>
 
-                            <div class="col-7">
-                                <input type="text" class="w-50"/> - <input type="text" class="w-50"/>
+                            <div class="col-md-8 col-sm-10 col-xs-12 d-flex">
+                                <input type="time" class="w-50"/> - <input type="time" class="w-50"/>
                             </div>
                         </div>
 
                         <div class="form-group form-check d-flex flex-row justify-content-between">
-                            <div class="col-3">
+                            <div class="col-md-3 col-sm-10 col-xs-12">
                                 <input type="checkbox" class="form-check-input" id="tuesday">
                                 <label class="form-check-label" for="tuesday">Tuesday</label>
                             </div>
                             
-                            <div class="col-7">
-                                <input type="text" class="w-50" /> - <input type="text" class="w-50" />
+                            <div class="col-md-8 col-sm-10 col-xs-12 d-flex">
+                                <input type="time" class="w-50" /> - <input type="time" class="w-50" />
                             </div>
                         </div>
 
                         <div class="form-group form-check d-flex flex-row justify-content-between">
-                            <div class="col-3">
+                            <div class="col-md-3 col-sm-10 col-xs-12">
                                 <input type="checkbox" class="form-check-input" id="wednesday">
                                 <label class="form-check-label" for="wednesday">Wednesday</label>
                             </div>
 
-                            <div class="col-7">
-                                <input type="text" class="w-50"/> - <input type="text" class="w-50" />
+                            <div class="col-md-8 col-sm-10 col-xs-12 d-flex">
+                                <input type="time" class="w-50"/> - <input type="time" class="w-50" />
                             </div>
                         </div>
 
                         <div class="form-group form-check d-flex flex-row justify-content-between">
-                            <div class="col-3">
+                            <div class="col-md-3 col-sm-10 col-xs-12">
                                 <input type="checkbox" class="form-check-input" id="thursday">
                                 <label class="form-check-label" for="thursday">Thursday</label>
                             </div>
 
-                            <div class="col-7">
-                                <input type="text" class="w-50"/> - <input type="text" class="w-50"/>
+                            <div class="col-md-8 col-sm-10 col-xs-12 d-flex">
+                                <input type="time" class="w-50"/> - <input type="time" class="w-50"/>
                             </div>
                         </div>
 
                         <div class="form-group form-check d-flex flex-row justify-content-between">
-                            <div class="col-3">
+                            <div class="col-md-3 col-sm-10 col-xs-12">
                                 <input type="checkbox" class="form-check-input" id="friday">
                                 <label class="form-check-label" for="friday">Friday</label>
                             </div>
 
-                            <div class="col-7">
-                                <input type="text" class="w-50"/> - <input type="text" class="w-50" />
+                            <div class="col-md-8 col-sm-10 col-xs-12 d-flex">
+                                <input type="time" class="w-50"/> - <input type="time" class="w-50" />
                             </div>
 
                         </div>
@@ -179,7 +183,6 @@
             </div>
         </div>
     </div>
-
     
 <script>
     $('.txtStyle').keyup(function () {
