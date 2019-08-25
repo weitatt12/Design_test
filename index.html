@@ -17,10 +17,10 @@
             height: 150px;
         }
         
-        @media (max-width: 250px) {
+        @media (max-width: 350px) {
             .img-icon {
-                width: 80%;
-                height: 80%;
+                width: 50%;
+                height: 50%;
             }
         }
     </style>
@@ -32,7 +32,7 @@
             <div class="col-md-5 col-sm-10 col-xs-12">
 
                 <div class="d-flex">
-                    <div class="card mt-4 mx-auto">
+                    <div class="card mt-4 mx-auto d-flex text-align-center">
                         <img src="https://image.flaticon.com/icons/svg/45/45802.svg" alt="general settings" class="img-icon" />
                         <h6 class="card-title">General Settings</h6>
                     </div>
@@ -87,10 +87,10 @@
             <div class="col-md-7 col-sm-10 col-xs-12">
 
                 <div class="w-100 d-flex flex-row justify-content-between mt-4" style="background-color: lightgrey;">
-                    <h4>Chat Confiuration</h4>
+                    <h4>Chat Configuration</h4>
                     <div class="custom-control custom-switch d-flex justify-content-end">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                        <label class="custom-control-label" for="customSwitch1"></label>
+                        <input type="checkbox" class="custom-control-input" id="chatConfiguration">
+                        <label class="custom-control-label" for="chatConfiguration"></label>
                     </div>
                 </div>
                 <p style="background-color: lightgrey;">Change your chat preferences</p>
@@ -98,8 +98,8 @@
                 <div class="w-100 d-flex flex-row justify-content-between mt-4">
                     <h5>Accept Chat from Customers</h5>
                     <div class="custom-control custom-switch d-flex justify-content-end">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                        <label class="custom-control-label" for="customSwitch2"></label>
+                        <input type="checkbox" class="custom-control-input" id="chatFromCustomers">
+                        <label class="custom-control-label" for="chatFromCustomers"></label>
                     </div>
                 </div>
                 <p>Turn on to allow Customers to start a chat with you via Dashboard / Mobile</p>
@@ -107,8 +107,8 @@
                 <div class="w-100 d-flex flex-row justify-content-between mt-4">
                     <h5>Send Auto-Reply in Chat</h5>
                     <div class="custom-control custom-switch d-flex justify-content-end">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch3">
-                        <label class="custom-control-label" for="customSwitch3"></label>
+                        <input type="checkbox" class="custom-control-input" id="autoReply">
+                        <label class="custom-control-label" for="autoReply"></label>
                     </div>
                 </div>
                 <p>Enable to send self-defined reply message to Customers when they chat with you</p>
@@ -119,8 +119,8 @@
                 <div class="w-100 d-flex flex-row justify-content-between mt-4">
                     <h5>Choose When You Chat</h5>
                     <div class="custom-control custom-switch d-flex justify-content-end">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch4">
-                        <label class="custom-control-label" for="customSwitch4"></label>
+                        <input type="checkbox" class="custom-control-input" id="whenYouChat">
+                        <label class="custom-control-label" for="whenYouChat"></label>
                     </div>
                 </div>
                 <p>Sets the Times and Days When you appear online to chat</p>
