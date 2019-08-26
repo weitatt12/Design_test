@@ -32,7 +32,7 @@
             <div class="col-md-5 col-sm-10 col-xs-12">
 
                 <div class="d-flex">
-                    <div class="card mt-4 mx-auto d-flex text-align-center">
+                    <div class="card mt-4 mx-auto">
                         <img src="https://image.flaticon.com/icons/svg/45/45802.svg" alt="general settings" class="img-icon" />
                         <h6 class="card-title">General Settings</h6>
                     </div>
@@ -112,8 +112,8 @@
                     </div>
                 </div>
                 <p>Enable to send self-defined reply message to Customers when they chat with you</p>
-                <textarea class="txtStyle col-sm-12 col-xs-12" maxlength="500" rows="3" cols="50" placeholder="Text Your Message Here ...."></textarea>
-                <p> You can put greetings, policies, promotions and any other information you wish to let your customers know in the message, limited to <span id="txtRemaining"> 500</span> characters </p>
+                <textarea class="text col-sm-12 col-xs-12" maxlength="500" rows="3" cols="50" placeholder="Text Your Message Here ...."></textarea>
+                <p> You can put greetings, policies, promotions and any other information you wish to let your customers know in the message, limited to <span id="remainingWord"> 500</span> characters </p>
                 <button class="btn btn-primary">Save</button>
 
                 <div class="w-100 d-flex flex-row justify-content-between mt-4">
@@ -136,7 +136,7 @@
 
                         <div class="form-group form-check d-flex flex-row justify-content-between">
                             <div class="col-md-3 col-sm-10 col-xs-12">
-                                <input type="checkbox" class="form-check-input" id="monday">
+                                <input type="checkbox" class="form-check-input" id="days">
                                 <label class="form-check-label" for="monday">Monday</label>
                             </div>
 
@@ -147,7 +147,7 @@
 
                         <div class="form-group form-check d-flex flex-row justify-content-between">
                             <div class="col-md-3 col-sm-10 col-xs-12">
-                                <input type="checkbox" class="form-check-input" id="tuesday">
+                                <input type="checkbox" class="form-check-input" id="days">
                                 <label class="form-check-label" for="tuesday">Tuesday</label>
                             </div>
                             
@@ -158,7 +158,7 @@
 
                         <div class="form-group form-check d-flex flex-row justify-content-between">
                             <div class="col-md-3 col-sm-10 col-xs-12">
-                                <input type="checkbox" class="form-check-input" id="wednesday">
+                                <input type="checkbox" class="form-check-input" id="days">
                                 <label class="form-check-label" for="wednesday">Wednesday</label>
                             </div>
 
@@ -169,7 +169,7 @@
 
                         <div class="form-group form-check d-flex flex-row justify-content-between">
                             <div class="col-md-3 col-sm-10 col-xs-12">
-                                <input type="checkbox" class="form-check-input" id="thursday">
+                                <input type="checkbox" class="form-check-input" id="days">
                                 <label class="form-check-label" for="thursday">Thursday</label>
                             </div>
 
@@ -180,7 +180,7 @@
 
                         <div class="form-group form-check d-flex flex-row justify-content-between">
                             <div class="col-md-3 col-sm-10 col-xs-12">
-                                <input type="checkbox" class="form-check-input" id="friday">
+                                <input type="checkbox" class="form-check-input" id="days">
                                 <label class="form-check-label" for="friday">Friday</label>
                             </div>
 
@@ -197,9 +197,10 @@
     </div>
     
 <script>
-    $('.txtStyle').keyup(function () {
-        $('#txtRemaining').html((500 - $(this).val().length));
+    $('.text').keyup(function () {
+        $('#remainingWord').html((500 - $(this).val().length));
     });
+
 </script>
 </body>
 </html>
